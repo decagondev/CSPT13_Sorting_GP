@@ -4,7 +4,7 @@ animals = ['Duck', 'Jackal', 'Hippo', 'Aardvark', 'Cat', 'Flamingo', 'Iguana', '
 # Linear time
 def print_animals(animal_list): # O(n)
     for i in range(len(animal_list)): # O(n)
-        print(animal_list[i]) # O(1)
+        print(animal_list[i]) # O(1) + O(k) where k is the len of the string for our purposes we are ignoring k
 
 
 """
