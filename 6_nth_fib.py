@@ -14,3 +14,19 @@ Eventually, we arrive at the 0th and 1st numbers, which are defined as 0 and 1. 
 with an arbitrary or defined answer, this is the base case.
 We can use this understanding to plan our approach via pseudocode:
 """
+
+# base case ?
+
+def fibn(n): # label
+    # condition (base case)
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+
+    # body decrement
+    # return the recursive call to fib n on n-1 and add it to the fib of n on n - 2
+    return fibn(n - 1) + fibn(n - 2)
+
+
+print(fibn(40))
